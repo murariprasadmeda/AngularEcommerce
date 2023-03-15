@@ -1,0 +1,13 @@
+<div class="container w-50 border">
+    <br>
+    <h2 class="container">Welcome To Ecommerce </h2>
+    <form #LogInUSer="ngForm"  (ngSubmit)="submit(LogInUSer.value)">
+        <br>
+        <input type="email" name="user-login.email" ngModel placeholder="Enter mail" class="form-control " required >
+        <br>
+        <input type="password" name="user-login.password" ngModel placeholder="Password" class="form-control"  required>
+        <br>
+        <button type="submit" class="btn btn-small btn-info">Login</button>
+
+    </form>
+</div>
