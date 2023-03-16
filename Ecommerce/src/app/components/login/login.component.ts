@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserLogin } from 'src/app/classes/user-login';
 
 @Component({
   selector: 'app-login',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+  userLogin!: UserLogin;
 
   constructor() { }
 
@@ -13,7 +15,8 @@ export class LoginComponent implements OnInit {
   }
 
   submit(user:any){
-    console.warn(user);
+    this.userLogin=user
+    console.warn(this.userLogin);
 
   }
 }
